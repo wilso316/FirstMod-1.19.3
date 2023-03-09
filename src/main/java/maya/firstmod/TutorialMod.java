@@ -1,5 +1,6 @@
 package maya.firstmod;
 
+import maya.firstmod.block.ModBlocks;
 import maya.firstmod.item.ModItemGroup;
 import maya.firstmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -18,6 +19,7 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
